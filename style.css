@@ -138,7 +138,7 @@ section[role=main] h4 strong {
 }
 
 .experiences li, .training li {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   list-style: none;
 }
 
@@ -347,4 +347,32 @@ section[role=main] h4 strong {
   100% {
     opacity: 1;
   }
+}
+
+@media (max-width: 600px) {
+  .container_16 {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+ }
+}
+
+@media (max-width: 960px){
+ .container_16 .grid_8 {
+   width: 100%;
+ }
+ .dpersonales{
+  grid-template-columns: repeat(2, 1fr);
+  
+  }
+  .formation1 ul, .formation2 ul {
+    display: flex;
+  }
+  .training li {
+    width: 30%;
+    padding: 10px;
+  }
+  
 }
