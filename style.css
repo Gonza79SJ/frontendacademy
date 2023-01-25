@@ -522,5 +522,11 @@ Footer
     width: 30%;
     padding: 10px;
   }
+}
+
+@media (max-width: 739px) {
   
+  .footer a {
+    display: inline-flex;
+  }
 }
