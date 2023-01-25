@@ -1,28 +1,26 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="icono.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
   <meta property="og:title" content="CV para Final de Gonzalo Carreño">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gonza79sj.github.io/frontendacademy/">
   <meta property="og:image" content="https://gonza79sj.github.io/frontendacademy/icono.png">
   <meta property="og:description" content="CV desarrollado para final curso Primeros Pasos en Frontend">
-
+  <link rel="icon" type="image/png" href="icono.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script> 
   <title>Cv Gonzalo Carreño</title>
 </head>
 
 <body>
   
-</body>
-</html>
 <!-- Header -->
 <header class="banner">
+  <a name="inicio"></a>
   <div class="container_16">
     <figure>
       <img id="fotoperfil" src="" alt="">
@@ -40,6 +38,7 @@
 <section role="main" class="container_16">
   <div class="grid_16">
     <!-- About me -->
+    <a name="about"></a>
     <div class="grid_8 fadeInLeft">
       <img class="icon" src="https://i.imgur.com/8msw88z.png" alt="sobre mí">
       <h3>Sobre mí</h3>
@@ -62,103 +61,124 @@
   </div>
 
   <!-- Datos Personales -->
+  
   <div class="grid_16 experiences appear">
     <img class="icon" src="https://i.imgur.com/gIXe1cf.png" alt="Experiencias">
+    <a name="per"></a>
     <h3>Datos Personales</h3>
-    
     <ul>
       <div class="dpersonales">
-       <li>
-        <h4><strong>Nombre Completo</strong></h4>
-        <p></p><span id="nombre"></span>
-        <span id="apellido"></span>
-        </p>
-      </li>
-      <li>
-        <h4><strong>Edad</strong></h4>
-        <p id="edad"></p>
-      </li>
-      <li>
-        <h4><strong>Fecha Nacimiento</strong></h4>
-        <p>16 de Marzo de 1980</p>
-      </li>
-      <li>
-        <h4><strong>Dirección - Calle</strong></h4>
-        <p id="calle"></p>
-      </li>
-    </div>
-    <div class="dpersonales">
-      <li>
-        <h4><strong>Dirección - Numero</strong></h4>
-        <p id="numero"></p>
-      </li>
-      <li>
-        <h4><strong>Correo Electrónico</strong></h4>
-        <p id="correo"></p>
-      </li>
-      <li>
-        <h4><strong>Teléfono de Contacto</strong></h4>
-        <p id="phone"></p>
-      </li>
-      <li>
-        <h4><strong>Celular de Contacto</strong></h4>
-        <p id="cell"></p>
-      </li>
-    </div>
-    <div class="dpersonales">
-      <li>
-        <h4><strong>Género</strong></h4>
-        <p id="gender"></p>
-      </li>
-      <li>
-        <h4><strong>Pais</strong></h4>
-        <span id="country"></span>
-        <span id="state"></span>
-        <span id="city"></span>
-        <span id="postcode"></span>
-      </li>
+        <li>
+          <h4><strong>Nombre Completo</strong></h4>
+          <p>
+            <span id="nombre"></span>
+            <span id="apellido"></span>
+          </p>
+        </li>
+        <li>
+          <h4><strong>Edad</strong></h4>
+          <p id="edad"></p>
+        </li>
+        <li>
+          <h4><strong>Fecha Nacimiento</strong></h4>
+          <p id="nacimiento"></p>
+        </li>
+        <li>
+          <h4><strong>Dirección - Calle</strong></h4>
+          <p id="calle"></p>
+        </li>
+      </div>
+      <div class="dpersonales">
+        <li>
+          <h4><strong>Dirección - Numero</strong></h4>
+          <p id="numero"></p>
+        </li>
+        <li>
+          <h4><strong>Correo Electrónico</strong></h4>
+          <p id="correo"></p>
+        </li>
+        <li>
+          <h4><strong>Teléfono de Contacto</strong></h4>
+          <p id="phone"></p>
+        </li>
+        <li>
+          <h4><strong>Celular de Contacto</strong></h4>
+          <p id="cell"></p>
+        </li>
+      </div>
+      <div class="dpersonales">
+        <li>
+          <h4><strong>Género</strong></h4>
+          <p id="gender"></p>
+        </li>
+        <li>
+          <h4><strong>Pais</strong></h4>
+          <span id="country"></span>
+          <span id="state"></span>
+          <span id="city"></span>
+          <span id="postcode"></span>
+        </li>
+      </div>
     </ul>
-  </div>
   </div>
 
   <!-- Training -->
+  
   <div class="grid_16 training appear">
     <img class="icon" src="https://i.imgur.com/mTJKfOj.png" alt="sobre mí">
+    <a name="form"></a>
     <h3>Formación</h3>
     <div class="formation1">
-    <ul>
-      <li>
-        <h4><strong>Curso de Diseño Web con CSS3</strong></h4>
-        <span class="site">Fundación General de la Universidad de La Laguna.</span>
-        <span class="date">2014</span>
-      </li>
-      <li>
-        <h4><strong>Curso de Programación de Apps Móviles</strong></h4>
-        <span class="site">Universidad Complutense de Madrid - Google.</span>
-        <span class="date">2014</span>
-      </li>
-      <li>
-        <h4><strong>Curso de Android KitKat 4.4</strong></h4>
-        <span class="site">Imagina Formación.</span>
-        <span class="date">2014</span>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <h4><strong>Curso de Diseño Web con CSS3</strong></h4>
+          <span class="site">Fundación General de la Universidad de La Laguna.</span>
+          <span class="date">2014</span>
+        </li>
+        <li>
+          <h4><strong>Curso de Programación de Apps Móviles</strong></h4>
+          <span class="site">Universidad Complutense de Madrid - Google.</span>
+          <span class="date">2014</span>
+        </li>
+        <li>
+          <h4><strong>Curso de Android KitKat 4.4</strong></h4>
+          <span class="site">Imagina Formación.</span>
+          <span class="date">2014</span>
+        </li>
+      </ul>
     </div>
     <div class="formation2">
-    <ul>
-      <li>
-        <h4><strong>Curso de Analítica Web</strong></h4>
-        <span class="site">Escuela de Organización Industrial - Google.</span>
-        <span class="date">2014</span>
-      </li>
-      <li>
-        <h4><strong>Android: Programación de aplicaciones</strong></h4>
-        <span class="site">MiriadaX.</span>
-        <span class="date">2013</span>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <h4><strong>Curso de Analítica Web</strong></h4>
+          <span class="site">Escuela de Organización Industrial - Google.</span>
+          <span class="date">2014</span>
+        </li>
+        <li>
+          <h4><strong>Android: Programación de aplicaciones</strong></h4>
+          <span class="site">MiriadaX.</span>
+          <span class="date">2013</span>
+        </li>
+      </ul>
     </div>
   </div>
 
-<script src="script.js"></script>
-<script src="barras.js"></script>
+  <script src="script.js"></script>
+  <script src="barras.js"></script>
+
+
+  <!--Boton Flotante-->
+  <div class="boton">
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="tag"></label>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#about">Sobre mi</a>
+      <a href="#per">Datos Personales</a>
+      <a href="#form">Formación</a>
+    </nav>
+  </div>
+
+
+</body>
+</html>

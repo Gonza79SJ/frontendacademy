@@ -1,9 +1,10 @@
+//* Capturamos datos aleatorios de randomuser.me y los utilizamos para cargar en el CV
 var contenido = document.querySelector('#contenido')
 
     fetch('https://randomuser.me/api/?nat=es')
     .then(res => res.json())
     .then(data => {
-    console.log(data.results['0'])
+    //* console.log(data.results['0'])
         
     var nameperfil = data.results['0'].name.first
     document.getElementById('nameperfil').innerHTML = nameperfil
@@ -16,6 +17,11 @@ var contenido = document.querySelector('#contenido')
 
     var apellido = data.results['0'].name.last
     document.getElementById('apellido').innerHTML = apellido
+
+    var nacimiento = moment(data.results[0].dob.date).format("DD MMM YYYY")
+    //*console.log(data.results[0].dob.date)
+    //*console.log (nacimiento)
+    document.getElementById('nacimiento').innerHTML = nacimiento
 
     var calle = data.results['0'].location.street.name
     document.getElementById('calle').innerHTML = calle
@@ -49,8 +55,6 @@ var contenido = document.querySelector('#contenido')
 
     var postcode = data.results['0'].location.postcode
     document.getElementById('postcode').innerHTML = postcode
-
-
     })    
     
     

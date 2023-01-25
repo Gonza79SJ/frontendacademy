@@ -1,3 +1,5 @@
+//** Creamos numeros aleatorios para cargar en las barras de Aptitudes
+
 var max = 100;
 var min = 10;
 
@@ -7,8 +9,7 @@ array1.forEach(function(elemento){
   let a = Math.random() * (max - min) + min;
   var resultado = ("width: " + a + "% ")
   document.getElementById(elemento).setAttribute("style", resultado)
-  console.log(resultado + " " + elemento); 
-
+  //*console.log(resultado + " " + elemento); 
               
 });
     
